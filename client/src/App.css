@@ -1,0 +1,87 @@
+body {
+  background-color: cadetblue;
+}
+h1 {
+  color: rgb(80, 47, 47);
+}
+.App {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  max-width: 1000px;
+}
+.container {
+  margin: 30px 50px 20px 50px;
+  padding: 15px;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.add-btn {
+  width: 20%;
+  transition: 0.3s ease !important;
+}
+.add-btn:hover {
+  border: 1px solid rgba(0, 0, 139, 0.801) !important;
+}
+.update-btn {
+  color: green !important;
+}
+.task {
+  text-align: left;
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px 10px 30px;
+  margin: 15px 50px 15px 50px;
+}
+.light {
+  background-color: rgb(128, 128, 128, 0.1) !important;
+  box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.1) !important;
+}
+.btn {
+  padding: 2px !important;
+  font-size: 12px !important;
+}
+.line-through {
+  text-decoration: line-through;
+}
+.edit {
+  margin-left: 20px;
+  color: gray;
+  transition: 0.2s ease;
+  font-size: small;
+  text-decoration: underline;
+}
+.edit:hover {
+  color: black;
+  cursor: pointer;
+}
+.total {
+  color: aliceblue;
+}
+
+/* Responive */
+@media screen and (max-width: 480px) {
+  .container {
+    margin: 0px 10px 10px 10px;
+    padding: 15px;
+  }
+  .task {
+    padding: 10px 20px 10px 20px;
+    margin: 10px 20px 5px 20px;
+  }
+  .light {
+    padding: 0px 0px 15px 0px;
+  }
+  .add-btn:hover {
+    /* background-color: skyblue !important; */
+    border: 2px solid rgba(0, 0, 139, 0.801) !important;
+  }
+  .App {
+    width: 100%;
+  }
+}
